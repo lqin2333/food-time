@@ -1,1 +1,3 @@
-# food-time
+# Food Time
+
+## A Vue Project
