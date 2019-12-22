@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>food-time</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script src="/dist/build.js"></script>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Food Title</title>
+        <link rel="stylesheet" href="./static/css/reset.css" />
+        <link rel="stylesheet" href="http://at.alicdn.com/t/font_1576945_wuup1eib77.css" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimun-scale=1.0, user-scalable=no"
+        />
+        <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+        <script>
+            if ("addEventListener" in document) {
+                document.addEventListener(
+                    "DOMContentLoaded",
+                    function() {
+                        FastClick.attach(document.body);
+                    },
+                    false
+                );
+            }
+            if (!window.Promise) {
+                document.writeln(
+                    '<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' +
+                        ">" +
+                        "<" +
+                        "/" +
+                        "script>"
+                );
+            }
+        </script>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="/dist/build.js"></script>
+    </body>
 </html>
