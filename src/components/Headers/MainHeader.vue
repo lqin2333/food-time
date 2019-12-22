@@ -13,6 +13,7 @@ export default {};
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
+    
     .header
     .main--header
         display flex
