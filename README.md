@@ -1,4 +1,4 @@
-# Food Time
+# food-time
 
 > A Vue.js project
 
