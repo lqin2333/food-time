@@ -1,0 +1,6 @@
+{
+    "vetur.format.options.tabSize": 4,
+    "stylusSupremacy.insertColons": false,
+    "stylusSupremacy.insertBraces": false,
+    "stylusSupremacy.insertSemicolons": false
+}

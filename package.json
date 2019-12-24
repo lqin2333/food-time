@@ -28,6 +28,7 @@
     "file-loader": "^1.1.4",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
+    "swiper": "^5.2.1",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
