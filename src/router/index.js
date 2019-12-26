@@ -4,16 +4,18 @@ import Home from "../pages/Home/Home.vue";
 import Search from "../pages/Search/Search.vue";
 import Order from "../pages/Order/Order.vue";
 import Profile from "../pages/Profile/Profile.vue";
+import Login from "../pages/Login/Login.vue";
 
 
 Vue.use(VueRouter);
 
 export default new VueRouter({
     routes: [
-        { path: "/home", component: Home },
-        { path: "/search", component: Search },
-        { path: "/order", component: Order},
-        { path: "/profile", component: Profile },
-        { path: "/", redirect: "/home" }
+        { path: "/home", component: Home, meta: { showInFooter: true } },
+        { path: "/search", component: Search, meta: { showInFooter: true } },
+        { path: "/order", component: Order, meta: { showInFooter: true } },
+        { path: "/profile", component: Profile, meta: { showInFooter: true } },
+        { path: "/", redirect: "/home" },
+        { path: "/login", component: Login },
     ]
 });

@@ -8,38 +8,21 @@
                 <span>Login / Register</span>
             </div>
         </GeneralHeader>
-        <div>Home</div>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">1</div>
-                <div class="swiper-slide">2</div>
-                <div class="swiper-slide">3</div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-        </div>
+        <GeneralSlider/>
+        <StoreList/>
     </div>
 </template>
 
 <script>
 import GeneralHeader from "../../components/Headers/GeneralHeader.vue";
-// require styles
-import Swiper from "swiper";
+import GeneralSlider from "../../components/Sliders/GeneralSlider.vue";
+import StoreList from "../../components/StoreList/StoreList.vue";
 
 export default {
-    mounted() {
-        var swiper = new Swiper(".swiper-container", {
-            centeredSlides: true,
-            spaceBetween: 30,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            }
-        });
-    },
     components: {
-        GeneralHeader
+        GeneralHeader,
+        GeneralSlider,
+        StoreList
     }
 };
 </script>
@@ -54,10 +37,4 @@ export default {
 
     .header--right
         width 30%
-
-.swiper
-    margin-top 300px
-
-.swiper-container
-    height 10rem
 </style>

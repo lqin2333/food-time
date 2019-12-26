@@ -1,5 +1,8 @@
 <template>
-    <GeneralHeader title="Profile"></GeneralHeader>
+    <div>
+        <GeneralHeader title="Profile"></GeneralHeader>
+        <router-link to="/login">Login / Register</router-link>
+    </div>
 </template>
 
 <script>
@@ -11,5 +14,4 @@ export default {
 };
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus">
-</style>
+<style lang="stylus" rel="stylesheet/stylus"></style>

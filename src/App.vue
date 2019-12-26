@@ -1,7 +1,7 @@
 <template>
     <div>
         <router-view/>
-        <FooterMenu/>
+        <FooterMenu v-show="$route.meta.showInFooter"/>
     </div>
 
 
